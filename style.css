@@ -1,0 +1,61 @@
+html {
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background: #000;
+  color: #aaa;
+  font-family: Open Sans, sans-serif;
+  font-size: 16px;
+  line-height: 1.8em;
+  display: table;
+}
+
+.content {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  max-width: 960px;
+  padding: 50px 16px;
+  margin: 0 auto;
+}
+
+.copy {
+  color: #555;
+}
+
+.logo {
+  margin: 0 32px 48px;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 8px 0;
+}
+
+a {
+  color: #428BCA;
+}
+
+ul, li {
+  padding: 0;
+  margin: 16px;
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+  padding: 8px 24px;
+  border: solid 2px #222;
+  border-radius: 40px;
+  margin: 8px;
+  cursor: pointer;
+}

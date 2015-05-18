@@ -15,6 +15,16 @@ body {
   display: table;
 }
 
+@media screen and (max-width: 500px) {
+  body {
+    font-size: 14px;
+  }
+
+  .show-wide {
+    display: none;
+  }
+}
+
 .content {
   display: table-cell;
   vertical-align: middle;
@@ -53,7 +63,7 @@ ul, li {
 li {
   display: inline-block;
   padding: 8px 24px;
-  border: solid 2px #222;
+  border: solid 2px #777;
   border-radius: 40px;
   margin: 8px;
   cursor: pointer;

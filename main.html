@@ -23,6 +23,22 @@
       <li>Show <a href="https://trello.com/b/R9Nh1V3t/spacetalk-roadmap" target="_blank"><span class="show-wide">SpaceTalk</span> Roadmap on Trello</a></li>
     </ul>
 
+    {{#unless invite}}
+    <form>
+      <div class="slack-info">
+        <p>Join <strong>SpaceTalk</strong> on Slack.<br />
+        <strong>{{slack.online}}</strong> users online now of <strong>{{slack.registered}}</strong> registered.</p>
+      </div>
+      <input type="email" placeholder="you@yourdomain.com" />
+      <button type="submit">Get my invite</button>
+    </form>
+    {{#if error}}
+    <div class="message error">{{error}}</div>
+    {{/if}}
+    {{else}}
+    <div class="message">Success! Check your email for an invite from Slack.</div>
+    {{/unless}}
+
     <p class="copy">Copyright © 2015 Tim Brandin &amp; SpaceTalk</p>
   </div>
 </template>

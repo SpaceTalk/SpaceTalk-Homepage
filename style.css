@@ -72,3 +72,56 @@ li {
 li:hover {
   border-color: white;
 }
+
+form {
+  margin: 16px auto;
+  display: inline-block;
+  padding: 8px 16px 16px;
+  border: solid 2px #777;
+  border-radius: 8px;
+  background: rgba(255,255,255, 0.05);
+  font-size: 14px;
+  line-height: 1.7em;
+}
+
+button,
+input {
+  padding: 8px 16px;
+  border: none;
+  width: 250px;
+  display: block;
+  font-size: 14px;
+  text-align: center;
+  box-sizing: border-box;
+  outline: none;
+  margin: 0;
+  margin-bottom: 6px;
+}
+
+button {
+  font-size: 14px;
+  color: white;
+  background: #428BCA;
+  margin-bottom: 0;
+  cursor: pointer;
+  appearence: none;
+  -webkit-appearence: none;
+  border-width: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.message {
+  width: 250px;
+  font-size: 14px;
+  padding: 8px 16px;
+  border: solid 2px #777;
+  border-radius: 8px;
+  background: rgba(255,255,255, 0.05);
+  margin: 0 auto 8px;
+  color: lightgreen;
+}
+
+.message.error {
+  color: yellow;
+}

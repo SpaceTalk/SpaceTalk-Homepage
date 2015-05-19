@@ -6,5 +6,4 @@
 
 meteor-platform
 spiderable
-http
-reactive-var
+studiointeract:slack-invite

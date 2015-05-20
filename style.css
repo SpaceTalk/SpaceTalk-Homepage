@@ -16,6 +16,25 @@ body {
   display: table;
 }
 
+.content {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.content .inner {
+  max-width: 960px;
+  padding: 50px 16px;
+  margin: 0 auto;
+}
+
+.logo {
+  background: url(planet.png) no-repeat;
+  background-size: 1920px auto;
+  background-position: center bottom 130px;
+  padding-top: 180px;
+}
+
 @media (max-width: 500px) {
   body {
     font-size: 14px;
@@ -24,22 +43,25 @@ body {
   .show-wide {
     display: none;
   }
+
+  .logo {
+    background-position: center bottom 110px;
+    padding-top: 160px;
+  }
 }
 
-.content {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-  max-width: 960px;
-  padding: 50px 16px;
-  margin: 0 auto;
+@media (max-width: 374px) {
+  .logo {
+    background-position: center bottom 100px;
+    padding-top: 150px;
+  }
 }
 
-.logo {
-  margin: 0 32px 48px;
+.logo .image {
+  margin: 0 32px;
 }
 
-img {
+.logo .image img {
   max-width: 100%;
   width: 468px;
   height: auto;

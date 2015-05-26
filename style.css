@@ -12,6 +12,7 @@ body {
   color: #aaa;
   font-family: Open Sans, sans-serif;
   font-size: 16px;
+  font-weight: 300;
   line-height: 1.8em;
   display: table;
 }
@@ -24,15 +25,8 @@ body {
 
 .content .inner {
   max-width: 960px;
-  padding: 50px 16px;
+  padding: 32px 16px;
   margin: 0 auto;
-}
-
-.logo {
-  background: url(planet.png) no-repeat;
-  background-size: 1920px auto;
-  background-position: center bottom 130px;
-  padding-top: 180px;
 }
 
 @media (max-width: 500px) {
@@ -43,18 +37,6 @@ body {
   .show-wide {
     display: none;
   }
-
-  .logo {
-    background-position: center bottom 110px;
-    padding-top: 160px;
-  }
-}
-
-@media (max-width: 374px) {
-  .logo {
-    background-position: center bottom 100px;
-    padding-top: 150px;
-  }
 }
 
 .logo .image {
@@ -63,7 +45,7 @@ body {
 
 .logo .image img {
   max-width: 100%;
-  width: 468px;
+  width: 500px;
   height: auto;
 }
 
@@ -86,7 +68,7 @@ ul, li {
 li {
   display: inline-block;
   padding: 8px 24px;
-  border: solid 2px #777;
+  border: solid 1px #777;
   border-radius: 40px;
   margin: 8px;
   cursor: pointer;
@@ -100,7 +82,7 @@ form {
   margin: 16px auto;
   display: inline-block;
   padding: 8px 16px 16px;
-  border: solid 2px #777;
+  border: solid 1px #777;
   border-radius: 8px;
   background: rgba(255,255,255, 0.05);
   font-size: 14px;
@@ -138,7 +120,7 @@ button {
   width: 250px;
   font-size: 14px;
   padding: 8px 16px;
-  border: solid 2px #777;
+  border: solid 1px #777;
   border-radius: 8px;
   background: rgba(255,255,255, 0.05);
   margin: 0 auto 8px;

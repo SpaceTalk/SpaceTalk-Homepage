@@ -6,4 +6,13 @@ if (Meteor.isClient) {
       window.open(href, '_blank');
     });
   });
+
+  Template.slackInvite.onCreated(function() {
+    var instance = this;
+    instance.autorun(function(){
+      if (instance.invite.get()) {
+        ga("send", "event", 'button', 'click', 'invite');
+      }
+    });
+  });
 }

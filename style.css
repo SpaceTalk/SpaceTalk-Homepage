@@ -150,7 +150,7 @@ button {
   display: block;
   position: absolute;
   left: 50%;
-  margin-left: -4px;
+  margin-left: -8px;
   height: 0;
   width: 0;
   background: none;

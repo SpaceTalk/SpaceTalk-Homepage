@@ -58,7 +58,6 @@ spacebars@1.0.6
 spacebars-compiler@1.0.6
 studiointeract:slack-invite@1.0.5
 templating@1.1.1
-timbrandin:flow-router-ga@0.6.0
 timbrandin:jsx-templating@0.1.2
 tracker@1.0.7
 ui@1.0.6

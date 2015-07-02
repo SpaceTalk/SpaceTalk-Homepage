@@ -30,8 +30,8 @@ Template.Content.onCreated(function() {
 
   component.handleClick = function(e) {
     e.preventDefault();
-    var href = this.refs.a.getDOMNode().href;
-    window.open(href, '_blank');
+    var a = e.target.closest("li").getElementsByTagName("a")[0];
+    window.open(a.href, '_blank');
   }
 
   component.handleInvite = function(e) {

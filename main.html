@@ -26,31 +26,13 @@
   <meta name="msapplication-square150x150logo" content="/favicons/mstile-150x150.png" />
   <meta name="msapplication-wide310x150logo" content="/favicons/mstile-310x150.png" />
   <meta name="msapplication-square310x310logo" content="/favicons/mstile-310x310.png" />
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-63559835-1', 'auto');
+    ga('send', 'pageview');
+  </script>
 </head>
-
-<template name="content">
-  <div class="content">
-    <div class="logo">
-      <div class="image">
-        <img src="/logo.png" />
-      </div>
-    </div>
-    <div class="inner">
-      <div class="breif">
-        <p>SpaceTalk makes it easy to launch your very own chat application, and get in control of your data. Build and customize your very own <em>Slack</em>, <em>Telegram</em>, or <em>Facebook Messenger</em>!</p>
-        <p>Built with Meteor, just like <a href="http://telescopeapp.org">the popular app Telescope.</a></p>
-      </div>
-
-      {{> githubStats}}
-
-      <ul>
-        <li>Fork <a href="http://github.com/SpaceTalk/SpaceTalk" target="_blank"><span class="show-wide">SpaceTalk</span> on Github</a></li>
-        <li>Show <a href="https://trello.com/b/R9Nh1V3t/spacetalk-roadmap" target="_blank"><span class="show-wide">SpaceTalk</span> Roadmap on Trello</a></li>
-      </ul>
-
-      {{> slackInvite}}
-
-      <p class="copy">Copyright © 2015 Tim Brandin &amp; SpaceTalk</p>
-    </div>
-  </div>
-</template>

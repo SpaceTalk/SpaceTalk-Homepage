@@ -5,9 +5,10 @@
 # but you can also edit it by hand.
 
 meteor-platform
-spiderable
 studiointeract:slack-invite
 http
-lookback:tooltips
-reywood:iron-router-ga
-iron:router
+react
+meteorhacks:react-layout
+meteorhacks:flow-router-ssr
+meteorhacks:fast-render
+timbrandin:jsx-templating

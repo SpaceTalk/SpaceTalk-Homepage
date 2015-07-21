@@ -8,7 +8,7 @@ meteor-platform
 studiointeract:slack-invite
 http
 react
-meteorhacks:react-layout
 meteorhacks:flow-router-ssr
 meteorhacks:fast-render
-timbrandin:jsx-templating
+timbrandin:sideburns
+kadira:react-layout

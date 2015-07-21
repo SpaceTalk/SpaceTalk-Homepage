@@ -163,3 +163,12 @@ button {
   border-right: solid 8px transparent;
   border-top: solid 8px white;
 }
+
+.fork {
+  padding: 0 0 8px;
+  font-size: 12px;
+  text-decoration: none;
+}
+.fork:hover {
+  text-decoration: underline;
+}

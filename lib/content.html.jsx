@@ -11,30 +11,32 @@
         <p>Built with Meteor, just like <a href="http://telescopeapp.org">the popular app Telescope.</a></p>
       </div>
 
-      <GithubStats />
+      <GithubStats/>
 
       <ul>
-        <li onClick={this.handleClick.bind(this)}>Fork <a ref="a" href="http://github.com/SpaceTalk/SpaceTalk" target="_blank"><span class="show-wide">SpaceTalk</span> on Github</a></li>
-        <li onClick={this.handleClick.bind(this)}>Show <a ref="a" href="https://trello.com/b/R9Nh1V3t/spacetalk-roadmap" target="_blank"><span class="show-wide">SpaceTalk</span> Roadmap on Trello</a></li>
+        <li>Fork <a ref="a" href="http://github.com/SpaceTalk/SpaceTalk" target="_blank"><span class="show-wide">SpaceTalk</span> on Github</a></li>
+        <li>Show <a ref="a" href="https://trello.com/b/R9Nh1V3t/spacetalk-roadmap" target="_blank"><span class="show-wide">SpaceTalk</span> Roadmap on Trello</a></li>
       </ul>
 
-      <SlackInvite onInvite={this.handleInvite}/>
+      <SlackInvite />
 
       <p class="copy">Copyright © 2015 Tim Brandin &amp; SpaceTalk</p>
+    </div>
+    <div class="fork">
+      <a href="https://github.com/SpaceTalk/SpaceTalk-Homepage" title="Fork SpaceTalk's Homepage"
+         target="_blank">Fork this page on Github</a>
     </div>
   </div>
 </template>
 
-Template.Content.onCreated(function() {
-  var component = this;
+Template.Content.events({
+  'click ul li': function(context, event) {
+    event.preventDefault();
+    var href = $('a', $(event.target).closest('li')).attr('href');
+    window.open(href, '_blank');
+  },
 
-  component.handleClick = function(e) {
-    e.preventDefault();
-    var a = e.target.closest("li").getElementsByTagName("a")[0];
-    window.open(a.href, '_blank');
-  }
-
-  component.handleInvite = function(e) {
+  'onInvite SlackInvite': function(context, event) {
     ga("send", "event", 'button', 'click', 'invite');
   }
 });

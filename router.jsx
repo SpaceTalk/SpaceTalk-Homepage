@@ -4,6 +4,13 @@ FlowRouter.route("/", {
     this.register('slack', Meteor.subscribe('slack'));
   },
   action: function() {
-    ReactLayout.render(Content);
+    if (Meteor.isClient) {
+      FlowRouter.subsReady('slack', function() {
+        ReactLayout.render(Content);
+      });
+    }
+    else {
+      ReactLayout.render(Content);
+    }
   }
 });
